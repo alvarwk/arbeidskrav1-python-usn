@@ -19,6 +19,8 @@ def årlige_totalkostnader(bil):
         return KM_PER_AAR * BENSINBIL_KOSTNAD_PER_KM + KM_PER_AAR * BENSINBIL_BOMAVGIFT_PER_KM + TRAFIKKFORSIKRINGSAVGIFT + FORSIKRING_BENSINBIL
     else:
         return "Ugyldig biltype"
+
+
 def årlig_kostnadsdifferanse(elbil_kostnad, bensinbil_kostnad):
     if bensinbil_kostnad > elbil_kostnad:
          differanse = bensinbil_kostnad - elbil_kostnad
@@ -27,7 +29,7 @@ def årlig_kostnadsdifferanse(elbil_kostnad, bensinbil_kostnad):
         differanse = elbil_kostnad - bensinbil_kostnad
         return f'Elbil er {differanse:.2f} kr dyrere enn bensinbil'
 
-    return 5
+
 elbil_kostnad = årlige_totalkostnader('elbil')
 bensinbil_kostnad = årlige_totalkostnader('bensinbil')
 
