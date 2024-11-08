@@ -20,8 +20,6 @@ def årlige_totalkostnader(bil):
     else:
         return "Ugyldig biltype"
 def årlig_kostnadsdifferanse(elbil_kostnad, bensinbil_kostnad):
-    #hvilken er størst
-    #hvor mye større er den
     if bensinbil_kostnad > elbil_kostnad:
          differanse = bensinbil_kostnad - elbil_kostnad
          return f'Bensinbil er {differanse:.2f} kr dyrere enn elbil'
